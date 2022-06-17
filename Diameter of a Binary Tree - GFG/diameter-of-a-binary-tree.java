@@ -120,7 +120,7 @@ class Solution {
        int diameter[] = new int[1];
        diameter[0] = Integer.MIN_VALUE;
        height(root,diameter);
-       return diameter[0]+1; // H
+       return diameter[0]+1; // HERE ACCORDING TO QUESTION RETURNING 1+DIAMETER
     }
     
     int height(Node node, int diameter[]){
