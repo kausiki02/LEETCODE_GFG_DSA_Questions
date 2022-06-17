@@ -9,6 +9,7 @@
  */
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        //base case
         if(root == null || root == p || root == q ){
             return root;
         }
@@ -26,7 +27,7 @@ class Solution {
         }
         
         else{
-            return root;
+            return root; //both right and left are not null, we found our result
         }
     }
 }
