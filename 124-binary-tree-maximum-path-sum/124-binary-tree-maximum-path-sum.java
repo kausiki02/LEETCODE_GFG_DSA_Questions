@@ -24,7 +24,7 @@ class Solution {
     private int maxPathDown(TreeNode node, int maxValue[]){
         if(node==null)return 0;
         
-        int left = Math.max(0,maxPathDown(node.left,maxValue));
+        int left = Math.max(0,maxPathDown(node.left,maxValue)); // 0 because to aoid negative pathsum if there is a negative node we will simply return 0
         int right = Math.max(0,maxPathDown(node.right,maxValue));
         
         maxValue[0] = Math.max(maxValue[0], left+right+node.val);
