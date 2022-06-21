@@ -1,26 +1,20 @@
 class Solution {
     public int furthestBuilding(int[] heights, int bricks, int ladders) {
-        int n = heights.length;
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        var n = heights.length;
+	var ladderClimbs = new PriorityQueue<Integer>();
 
-        for (int building = 1; building < n; building++) {
-            int heightDifference = heights[building] - heights[building - 1];
-            if (heightDifference > 0) {
-                if (pq.size() < ladders) pq.add(heightDifference);
-                else {
-                    int bricksToBeUsed = heightDifference;
-                    if (!pq.isEmpty() && pq.peek() < heightDifference) {
-                        bricksToBeUsed = pq.poll();
-                        pq.add(heightDifference);
-                    }
-
-                    if (bricks - bricksToBeUsed >= 0) bricks -= bricksToBeUsed;
-                    else return building - 1;
-                }
-            }
-
-        }
-        
-        return n - 1;
+	for (var i = 1; i < n; i++) {
+		var climb = heights[i] - heights[i - 1];
+		if (climb <= 0)
+			continue; // descent, skip
+			
+		ladderClimbs.add(climb);
+		if (ladderClimbs.size() <= ladders)
+			continue; // use a ladder
+		
+		if ((bricks -= ladderClimbs.poll()) < 0)
+			return i - 1; // insufficient bricks, terminate
+	}
+	return n - 1;
 }
 }
