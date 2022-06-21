@@ -115,6 +115,7 @@ class Solution
     
     public static void flatten(Node root)
     {
+        //morris traversal
         if(root==null) return;
      
     while(root!=null)
