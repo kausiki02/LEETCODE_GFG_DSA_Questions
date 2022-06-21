@@ -112,30 +112,23 @@ class GfG {
 
 class Solution
 {
-    static Node prev = null;
+    
     public static void flatten(Node root)
     {
-        //recursive sol
-        if(root == null) return;
-        
-        Node l = root.left;
-        Node r = root.right;
-        
-        root.left = null;
-        root.right = l;
-        
-        prev = root;
-        
-        flatten(l);
-        
-        if(prev!=null){
-            prev.left = null;
-            prev.right = r;
+        if(root==null) return;
+     
+    while(root!=null)
+    {
+        if(root.left!=null)
+        {
+            Node curr=root.left;
+           
+            while(curr.right!=null) curr=curr.right;
+            curr.right=root.right;
+            root.right=root.left;
+            root.left=null;
         }
-        
-        if(r!=null){
-            prev = r;
-        }
-        flatten(r);
+        root=root.right;
     }
+   }
 }
