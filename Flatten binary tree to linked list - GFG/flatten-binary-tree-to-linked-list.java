@@ -115,6 +115,7 @@ class Solution
     static Node prev = null;
     public static void flatten(Node root)
     {
+        //recursive sol
         if(root == null) return;
         
         Node l = root.left;
