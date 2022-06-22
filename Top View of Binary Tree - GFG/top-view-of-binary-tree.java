@@ -125,9 +125,9 @@ class Node{
 class Pair{
     int hd;
     Node node;
-    public Pair(Node rt, int vx){
-        node = rt;
-        hd = vx;
+    public Pair(Node node, int hd){
+        this.node = node;
+        this.hd = hd;
     }
 }
 
