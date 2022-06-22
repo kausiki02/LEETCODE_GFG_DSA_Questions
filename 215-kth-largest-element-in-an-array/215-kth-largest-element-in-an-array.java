@@ -4,17 +4,16 @@ class Solution {
         
         PriorityQueue<Integer> p = new PriorityQueue<Integer>();
         
-        for(int i =0; i<nums.length; i++){
-            if(p.size()<k){
+        for(int i =0; i<k; i++){
                 p.add(nums[i]);
-            }
-            else{
+        }
+        for(int i=k; i<nums.length;i++){
+            
                 if(p.peek()<nums[i]){
                     p.remove();
                     p.add(nums[i]);
                 }
             }
-        }
         return p.peek();
+        }
     }
-}
