@@ -114,6 +114,16 @@ class GfG {
 
 
 //User function Template for Java
+class Pair{
+    int level;
+    Node node;
+    
+    Pair(Node _node,int _level){
+    level=_level;
+    node=_node;
+    
+    }
+}
 
 
 class Solution
@@ -121,30 +131,33 @@ class Solution
     //Function to return a list containing the bottom view of the given tree.
     public ArrayList <Integer> bottomView(Node root)
     {
-        ArrayList<Integer> ans = new ArrayList<Integer>();
-        if(root == null) return ans;
-        Map<Integer,Integer> map = new TreeMap<>();
-        Queue<Node> q = new LinkedList<Node>();
-        root.hd = 0;
-        q.add(root);
+        ArrayList<Integer> res=new ArrayList<>();
         
-        while(!q.isEmpty()){
-            Node temp = q.poll();
-            int level = temp.hd;
+       if(root==null)
+       return res;
+       
+        Queue<Pair> q=new LinkedList<>();
+        Map<Integer,Integer> map=new TreeMap<>();
+       
+       q.offer(new Pair(root,0));
+       
+       while(!q.isEmpty()){
+           Pair it=q.poll();
+           
+           int level=it.level;
+           Node temp=it.node;
+           
             map.put(level,temp.data);
-            
-            if(temp.left!=null){
-                temp.left.hd=level-1;
-                q.add(temp.left);
-            }
-            if(temp.right!=null){
-                temp.right.hd = level+1;
-                q.add(temp.right);
-            }
-        }
-        for(Map.Entry<Integer,Integer> entry: map.entrySet()){
-            ans.add(entry.getValue());
-        }
-        return ans;
+           
+           if(temp.left!=null) q.offer(new Pair(temp.left,level-1));
+           if(temp.right!=null) q.offer(new Pair(temp.right,level+1));
+           
+           
+       }
+       
+       for(Integer key:map.keySet()){
+           res.add(map.get(key));
+       }
+       return res;
     }
 }
