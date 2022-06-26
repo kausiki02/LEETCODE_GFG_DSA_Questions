@@ -3,11 +3,12 @@ class Solution {
         int n = cardPoints.length, totalSum = 0, minSubarray = 0;
 
 	for (int i=0, currSum=0; i<n; i++) {
-		totalSum += cardPoints[i];
-		currSum += cardPoints[i];
-		if (i < n-k) minSubarray += cardPoints[i];
+		totalSum = totalSum+ cardPoints[i];
+		currSum = currSum+ cardPoints[i];
+		if (i < n-k) 
+            minSubarray = minSubarray+cardPoints[i];
 		else {
-			currSum -= cardPoints[i-(n-k)];
+			currSum = currSum-cardPoints[i-(n-k)];
 			minSubarray = Math.min(minSubarray, currSum);
 		}
 	}
