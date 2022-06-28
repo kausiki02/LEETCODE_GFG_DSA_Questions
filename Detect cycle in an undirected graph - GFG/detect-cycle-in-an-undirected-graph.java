@@ -51,7 +51,6 @@ class Solution {
     public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj) {
         // Code here
         boolean vis[] = new boolean[V+1];
-        Arrays.fill(vis,false);
         
         for(int i=0; i<V; i++){
             if(vis[i]==false){
