@@ -35,9 +35,13 @@ class Solution {
         int max_reach =0;
         
         for(int i=0; i<N; i++){
-            if(i>max_reach)return 0;
-            max_reach = Math.max(max_reach, i+A[i]);
+            if(i<=max_reach)
+                max_reach = Math.max(max_reach, i+A[i]);
         }
-        return 1;
+        if(max_reach>=N-1){
+            return 1;
+        }
+        else
+            return 0;
     }
 };
