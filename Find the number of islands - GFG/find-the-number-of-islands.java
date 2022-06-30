@@ -57,8 +57,8 @@ class Solution {
         dfsCall(grid, i, j-1);
         dfsCall(grid, i+1, j-1);
         dfsCall(grid, i-1, j+1);
-        dfsCall(grid, i+1, j+1);
-        dfsCall(grid, i-1, j-1);
+        dfsCall(grid, i+1, j+1); //considering in all 8 directions
+        dfsCall(grid, i-1, j-1); //since we want connected only islands not disconnected ones 
         
     }
 }
