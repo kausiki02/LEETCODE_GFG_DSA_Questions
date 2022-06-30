@@ -10,10 +10,10 @@ Therefore, intuitively, it's reasonable to suggest that if we picked the median 
             return 0;
         
         int operations = 0;
-        int mid = nums.length/2;
+        int mid = nums[nums.length/2];
         
-        for(int i=0; i<nums.length; i++){
-            operations = operations + Math.abs(nums[i]-nums[mid]); //abs since +/- 
+        for(int num:nums){
+            operations = operations + Math.abs(num-mid); //abs since +/- 
         }
         return operations;
     }
