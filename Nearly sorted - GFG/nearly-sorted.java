@@ -35,7 +35,7 @@ class Solution
     //Function to return the sorted array.
     ArrayList <Integer> nearlySorted(int arr[], int num, int k)
     {
-        
+        //adityva verma solution
         PriorityQueue<Integer> pqmin = new PriorityQueue<Integer>();
         
         ArrayList<Integer> ans = new ArrayList<Integer>();
@@ -43,11 +43,14 @@ class Solution
         for(int i=0; i<arr.length; i++){
             pqmin.add(arr[i]);
             
+            if(pqmin.size()>k){
+                ans.add(pqmin.poll());
+            }
+            
         }
         
         while(!pqmin.isEmpty()){
-            ans.add(pqmin.peek());
-            pqmin.poll();
+            ans.add(pqmin.poll());
         }
         return ans;
         
