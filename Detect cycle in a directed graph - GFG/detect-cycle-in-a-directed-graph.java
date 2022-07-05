@@ -34,6 +34,10 @@ class Solution {
     // Function to detect cycle in a directed graph.
     
     private boolean checkCycle(int node,ArrayList<ArrayList<Integer>> adj, int vis[], int dfsvis[] ){
+        
+        //intuition if both becomes 1 dfsvis array and vis array then there is a cycle.
+        //refer striver sheet 
+        
         vis[node]=1; //mark the vis node as 1
         dfsvis[node]=1;
         
@@ -48,7 +52,7 @@ class Solution {
                 }
 
         }
-        dfsvis[node] = 0;
+        dfsvis[node] = 0; //mark the node again to 0 to keep a track that no cycle is found
         return false;
         
     }
