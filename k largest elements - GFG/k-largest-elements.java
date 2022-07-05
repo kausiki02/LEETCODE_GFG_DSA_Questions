@@ -46,8 +46,9 @@ class Solution {
         }
         
         int ans[] = new int[k];
-        int index=k-1;
-        while(!pqmin.isEmpty()){
+        int index=k-1; // since we needed to print in the reverse order
+        while(!pqmin.isEmpty()){ // starting from the last element and popping all the elements 
+        //and storing it in the array 
             ans[index--] = pqmin.poll();
         }
         
