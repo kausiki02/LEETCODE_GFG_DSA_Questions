@@ -6,12 +6,12 @@ class Solution {
         int ans = 0;
   
         // Hash all the array elements
-        for (int i = 0; i < nums.length; ++i)
+        for (int i = 0; i < nums.length; i++)
             S.add(nums[i]);
   
         // check each possible sequence from the start
         // then update optimal length
-        for (int i = 0; i < nums.length; ++i) 
+        for (int i = 0; i < nums.length; i++) 
         {
             // if current element is the starting
             // element of a sequence
