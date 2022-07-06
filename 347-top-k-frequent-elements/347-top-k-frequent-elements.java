@@ -11,6 +11,10 @@ class Solution {
         
         for(int key : hm.keySet()){
             minHeap.add(key);
+            
+          /*  if(minHeap.size()>k){ // iski zaroorat nahi because tu niche last ke do elements hi le rhi heap se i<k (0-2)
+                minHeap.poll();
+            } */
         }
         int res[] = new int[k];
         for(int i = 0; i < k; i++){
