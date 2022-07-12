@@ -59,9 +59,8 @@ class Solution
         if(s.size()==0)
             return;
             
-        int temp = s.peek();
+        int temp = s.pop();
         arr.add(temp);
-        s.pop();
         reverse(s,arr);
     }
 }
