@@ -5,7 +5,7 @@ class MyStack {
     public MyStack() {
         this.q = new LinkedList<Integer>();
     }
-    
+    //using a single queue
     public void push(int x) {
         q.add(x);
         for(int i=0; i<q.size()-1; i++){
