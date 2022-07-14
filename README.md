@@ -1,3 +1,3 @@
-# Striver-SDE-SHEET
-- Collection of Striver's SDE Sheet questions.
+# Leetcode Problems
+- Collection of Striver's SDE Sheet questions + Daily Challenges
 - All the questions solved by me in leetcode.
