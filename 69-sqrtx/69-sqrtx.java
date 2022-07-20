@@ -10,12 +10,12 @@ class Solution {
             if(x== mid*mid){
                 return (int)mid;
             }
-            else if(x<mid*mid){
-                high = (int)mid-1;
+            else if(x>mid*mid){
+                low = (int)mid+1;
+                ans =(int)mid;
             }
             else{
-                low = (int)mid+1;
-                ans = (int)mid;
+                high = (int)mid-1;
             }
         }
         return ans;
