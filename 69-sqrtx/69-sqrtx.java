@@ -8,7 +8,7 @@ class Solution {
         while(low<=high){
             long mid = low+(high-low)/2;
             if(mid*mid<=x){
-                ans = (int)mid;
+                ans = (int)mid; // if it is equal or less than mid*mid then the ans might be the mid or greater than mid.
                 low =(int) mid+1;
             }
             else{
