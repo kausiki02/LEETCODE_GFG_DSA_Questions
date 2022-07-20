@@ -7,12 +7,9 @@ class Solution {
         
         while(low<=high){
             long mid = low+(high-low)/2;
-            if(x== mid*mid){
-                return (int)mid;
-            }
-            else if(x>mid*mid){
-                low = (int)mid+1;
-                ans =(int)mid;
+            if(mid*mid<=x){
+                ans = (int)mid;
+                low =(int) mid+1;
             }
             else{
                 high = (int)mid-1;
