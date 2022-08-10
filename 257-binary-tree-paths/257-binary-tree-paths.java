@@ -23,13 +23,16 @@ class Solution {
     }
     
     private void helper(TreeNode root, String str, List<String> res){
+        
+        str = str+ root.val;
+        
         if(root.left==null && root.right == null)
-            res.add(str+ root.val); // reach a leaf node , completes a path
+            res.add(str); // reach a leaf node , completes a path
         
         if(root.left!=null)
-            helper(root.left, str+root.val+"->", res); //recursively checks left child
+            helper(root.left, str+"->", res); //recursively checks left child
         
         if(root.right!=null)
-            helper(root.right, str+root.val+ "->", res); //recursively checks right child
+            helper(root.right, str+"->", res); //recursively checks right child
     }
 }
