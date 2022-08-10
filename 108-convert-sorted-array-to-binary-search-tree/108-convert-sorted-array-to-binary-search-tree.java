@@ -30,7 +30,7 @@ class Solution {
         int mid = (low+high)/2;
         
         TreeNode root = new TreeNode(nums[mid]);
-        root.left = helper(nums,low,mid-1);
+        root.left = helper(nums, low, mid-1);
         root.right = helper(nums, mid+1, high);
         
         return root;
