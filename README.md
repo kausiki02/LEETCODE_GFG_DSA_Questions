@@ -8,6 +8,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0001-two-sum) |
+| [0004-median-of-two-sorted-arrays](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0792-binary-search](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0792-binary-search) |
 ## Hash Table
 |  |
@@ -16,5 +17,10 @@
 ## Binary Search
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0792-binary-search](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0792-binary-search) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
