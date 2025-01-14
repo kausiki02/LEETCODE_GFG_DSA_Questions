@@ -11,6 +11,7 @@
 | [0004-median-of-two-sorted-arrays](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0792-binary-search](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0792-binary-search) |
 ## Hash Table
 |  |
@@ -22,6 +23,7 @@
 | [0004-median-of-two-sorted-arrays](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0792-binary-search](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0792-binary-search) |
 ## Divide and Conquer
 |  |
