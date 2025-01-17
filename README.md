@@ -31,4 +31,12 @@
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0004-median-of-two-sorted-arrays) |
+## Linked List
+|  |
+| ------- |
+| [0908-middle-of-the-linked-list](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0908-middle-of-the-linked-list) |
+## Two Pointers
+|  |
+| ------- |
+| [0908-middle-of-the-linked-list](https://github.com/kausiki02/LEETCODE_GFG_DSA_Questions/tree/master/0908-middle-of-the-linked-list) |
 <!---LeetCode Topics End-->
